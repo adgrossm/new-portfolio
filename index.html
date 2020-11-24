@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Adam Grossman Portfolio</title>
-    <link rel="stylesheet" href="./new-portfolio/assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 
 <body>
@@ -34,36 +34,36 @@
 
                 <div class="portfolio-item-wrapper">
 
-                    
+
                     <div class="portfolio-img-background" href="https://adgrossm.github.io/Project_1-1/"
-                        style="background-image: url(./new-portfolio/assets/images/lunch-screen.JPG)">
+                        style="background-image: url(./assets/images/lunch-screen.JPG)">
                     </div>
 
 
                     <div class="img-text-wrapper">
                         <div class="logo-wrapper">
-<!-- I commented out the logo image that appears smaller over the main portfolio image-->
-                            <!-- <img src="images/random-rest.png"> -->
+                            <!-- I commented out the logo image that appears smaller over the main portfolio image-->
+                            <img src="./assets/images/random-rest.png" alt="">
 
                         </div>
                         <!--  below transitions the linked text in once the user moves their mouse over it -->
                         <!-- will need to change the others so they are <a> tags to include the CSS file to transition in -->
-                        <div class="subtitle">
-                            <a href="https://adgrossm.github.io/Project_1-1/">Random Restuarant Generator -
-                            Custom app built to find a random local restuarant based on user input</a>
+                        <div class="subtitle">Custom app built to find a random local restaurant
+                            <!-- <a href="https://adgrossm.github.io/Project_1-1/">Custom app built to find a random local restaurant</a> -->
                         </div>
-                        
+
 
                     </div>
                 </div>
 
                 <div class="portfolio-item-wrapper">
-                    <div class="portfolio-img-background" style="background-image: url(./new-portfolio/assets/images/weather-dashboard.JPG)">
+                    <div class="portfolio-img-background"
+                        style="background-image: url(./new-portfolio/assets/images/weather-dashboard.JPG)">
                     </div>
 
                     <div class="img-text-wrapper">
                         <div class="logo-wrapper">
-                            <img src="images/weather-dashboard.JPG">
+                            <img src="./assets/images/weather-dashboard.JPG" alt="">
                         </div>
                         <div class="subtitle">
                             Custom app to display current and 5 day weather based on user location input
@@ -72,12 +72,13 @@
                 </div>
 
                 <div class="portfolio-item-wrapper">
-                    <div class="portfolio-img-background" style="background-image: url(./new-portfolio/assets/images/day-planner-screen.JPG)">
+                    <div class="portfolio-img-background"
+                        style="background-image: url(./new-portfolio/assets/images/day-planner-screen.JPG)">
                     </div>
 
                     <div class="img-text-wrapper">
                         <div class="logo-wrapper">
-                            <img src="images/day-planner-screen.JPG">
+                            <img src="./assets/images/day-planner-screen.JPG" alt="">
                         </div>
                         <div class="subtitle">
                             Interactive day planner with stored information and responsive design
@@ -95,7 +96,7 @@
 
                 <div class="portfolio-item-wrapper">
 
-                    <div class="portfolio-img-background" href="#""
+                    <div class="portfolio-img-background" href="#"
                         style=" background-image: url(./new-portfolio/assets/images/burger_screenshot.JPG)">
                     </div>
 
@@ -112,7 +113,8 @@
                 </div>
 
                 <div class="portfolio-item-wrapper">
-                    <div class="portfolio-img-background" style="background-image: url(./new-portfolio/assets/images/pass-screen.JPG)">
+                    <div class="portfolio-img-background"
+                        style="background-image: url(./new-portfolio/assets/images/pass-screen.JPG)">
                     </div>
 
                     <div class="img-text-wrapper">
@@ -146,7 +148,19 @@
     </div>
 </body>
 <script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
 
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover', () => {
+            portfolioItem.childNodes[1].classList.add('img-darken');
+        })
+    })
+
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseout', () => {
+            portfolioItem.childNodes[1].classList.remove('img-darken');
+        })
+    })
 </script>
 
 </html>

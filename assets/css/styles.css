@@ -81,14 +81,26 @@ height: 100%;
 text-align: center;
 padding-left: 33%;
 padding-right: 33%;
-transition: 1s;
+transition: 1.2s;
 }
 
 .logo-wrapper img{
     width: 50%;
     height: auto;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px;
+    transition: 1s; */
+}
+
+/* needs to be more specific with selector */
+.img-text-wrapper .subtitle {
     transition: 1s;
+    font-weight: 600;
+    color: transparent;
+}
+
+.img-text-wrapper:hover .subtitle {
+    font-weight: 600;
+    color: lightseagreen;
 }
 
 .img-text-wrapper a {
@@ -105,5 +117,4 @@ transition: 1s;
 .img-darken {
     transition: 1s;
     filter: brightness(10%);
-
 }
