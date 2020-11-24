@@ -1,6 +1,8 @@
 body {
+    font-family: "Lato", sans-serif;
 margin: 0px;
-background-color: grey;
+background-color: lightgray;
+
 }
 
 .container {
@@ -49,6 +51,14 @@ padding: 38px;
     color: black;
 }
 
+.active-nav-link {
+    border-bottom: 1px solid black;
+}
+
+.active-nav-link a{
+   color: black !important;
+}
+
 /*portfolio styles */
 
 .portfolio-items-wrapper {
@@ -85,8 +95,8 @@ transition: 1.2s;
 }
 
 .logo-wrapper img{
-    width: 50%;
-    height: auto;
+    width: 70px;
+    height: 70px;
     /* margin-bottom: 20px;
     transition: 1s; */
 }
@@ -117,4 +127,25 @@ transition: 1.2s;
 .img-darken {
     transition: 1s;
     filter: brightness(10%);
+}
+
+/* About page style */
+
+.two-column-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.profile-image-wrapper img {
+    width: 50%;
+}
+
+.profile-content-wrapper {
+    padding: 30px;
+
+}
+
+.profile-content-wrapper h2{
+    color: lightseagreen;
+    
 }
