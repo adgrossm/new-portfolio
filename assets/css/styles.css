@@ -101,6 +101,13 @@ transition: 1.2s;
     transition: 1s; 
 }
 
+.logo-wrapper a img{
+    width: 70px;
+    height: 70px;
+   
+    transition: 1s; 
+} 
+
 .image-blur {
     transition: 1s;
     filter: brightness(10%);
