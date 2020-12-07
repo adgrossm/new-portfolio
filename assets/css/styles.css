@@ -5,6 +5,16 @@ background-color: lightgray;
 
 }
 
+h3 {
+    color: lightseagreen;
+    
+}
+
+p {
+
+    color: lightseagreen;
+}
+
 .container {
     display: grid;
     grid-template-columns: 1fr;
@@ -131,7 +141,7 @@ transition: 1.2s;
     font-weight: 600;
 }
 
-.img-text-wrapper:hover a {
+.img-text-wrapper:hover a{
     font-weight: 600;
     color:  black
 }
